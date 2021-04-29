@@ -28,14 +28,14 @@
                 &:first-child {
                     left: 0;
                     top: 50%;
-                    background: var(--green-500);
+                    background: var(--episode-button-thumb-bg);
                     transform: translate(-50%, -50%);
                 }
 
                 &:last-child {
                     right: 0;
                     top: 50%;
-                    background: var(--green-500);
+                    background: var(--episode-button-thumb-bg);
                     transform: translate(50%, -50%);
                 }
 
@@ -47,7 +47,7 @@
 
         header {
             padding-bottom: 1rem;
-            border-bottom: 1px solid var(--gray-100);
+            border-bottom: 1px solid var(--default-border);
 
             h1 {
                 margin-top: 2rem;
@@ -68,7 +68,7 @@
                         width: 4px;
                         height: 4px;
                         border-radius: 2px;
-                        background: #DDDDDD;
+                        background: var(--span-color);
                         position: absolute;
                         left: 0;
                         top: 50%;
@@ -81,7 +81,7 @@
         .description {
             margin-top: 2rem;
             line-height: 1.675rem;
-            color: var(--gray-800);
+            color: var(--episode-description-color);
 
             p {
                 margin: 1.5rem 0;

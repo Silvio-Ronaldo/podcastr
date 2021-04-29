@@ -3,8 +3,8 @@
     width: 20.5rem;
     height: 100vh;
 
-    background-color: var(--purple-500);
-    color: var(--white);
+    background-color: var(--player-bg);
+    color: var(--player-color);
 
     display: flex;
     flex-direction: column;
@@ -57,9 +57,9 @@
 .emptyPlayer {
     width: 100%;
     height: 20rem;
-    border: 1.5px dashed var(--purple-300);
+    border: 1.5px dashed var(--empty-player-border);
     border-radius: 1.5rem;
-    background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(143.8deg, var(--empty-player-bg-primary) 0%, var(--empty-player-bg-secondary) 100%);
 
     padding: 2rem;
     text-align: center;
@@ -88,7 +88,7 @@
         .emptySlider {
             width: 100%;
             height: 4px;
-            background: var(--purple-300);
+            background: var(--slider-bg);
             border-radius: 2px;
         }
     }
@@ -129,7 +129,7 @@
             width: 4rem;
             height: 4rem;
             border-radius: 1rem;
-            background: var(--purple-400);
+            background: var(--play-button-bg);
 
             &:hover:not(:disabled) {
                 filter: brightness(0.95);

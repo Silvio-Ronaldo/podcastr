@@ -5,20 +5,69 @@
 }
 
 :root {
-    --white: #FFF;
-  
-    --gray-50: #F7F8FA;
-    --gray-100: #E6E8EB;
-    --gray-200: #AFB2B1;
-    --gray-500: #808080;
-    --gray-800: #494D4B;
-  
-    --green-500: #04D361;
+    --header-bg: #FFFFFF;
+    --header-button-light: #FFE900;
+    --header-button-dark: #000000;
+
     
-    --purple-300: #9F75FF;
-    --purple-400: #9164FA; 
-    --purple-500: #8257E5;
-    --purple-800: #6F48C9;
+    --player-bg: #8257E5;
+    --player-color: #FFFFFF;
+    
+    --empty-player-border: #9F75FF;
+    --empty-player-bg-primary: rgba(145, 100, 250, 0.8);
+    --empty-player-bg-secondary: rgba(0, 0, 0, 0);
+    
+    --slider-bg: #9F75FF;
+
+    --play-button-bg: #9164FA;
+
+
+    --page-bg: #F7F8FA;
+    --page-color: #808080;
+
+    --title-color: #494D4B;
+    --list-item-bg: #FFFFFF;
+    --default-border: #E6E8EB;
+    --link-color: #494D4B;
+    --span-color: #DDDDDD;
+    --table-head-color: #AFB2B1;
+    --button-bg: #FFFFFF;
+
+
+    --episode-button-thumb-bg: #04D361;
+    --episode-description-color: #494D4B;
+}
+
+[data-theme="dark"] {
+    --header-bg: #F61121;
+
+    
+    --player-bg: #8257E5;
+    --player-color: #FFFFFF;
+    
+    --empty-player-border: #9F75FF;
+    --empty-player-bg-primary: rgba(145, 100, 250, 0.8);
+    --empty-player-bg-secondary: rgba(0, 0, 0, 0);
+    
+    --slider-bg: #9F75FF;
+
+    --play-button-bg: #9164FA;
+
+
+    --page-bg: #F7F8FA;
+    --page-color: #808080;
+    --title-color: #494D4B;
+
+    --list-item-bg: #FFFFFF;
+    --default-border: #E6E8EB;
+    --link-color: #494D4B;
+    --span-color: #DDDDDD;
+    --table-head-color: #AFB2B1;
+    --button-bg: #FFFFFF;
+
+
+    --episode-button-thumb-bg: #04D361;
+    --episode-description-color: #494D4B;
 }
 
 @media (max-width: 1080px) {
@@ -34,20 +83,20 @@
 }
 
 body {
-    background: var(--gray-50);
+    background: var(--page-bg);
 }
 
 body, input, textarea, button {
     font-weight: 500;
     font-size: 1rem;
     font-family: Inter, sans-serif;
-    color: var(--gray-500);
+    color: var(--page-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Lexend, sans-serif;
     font-weight: 600;
-    color: var(--gray-800);
+    color: var(--title-color);
 }
 
 h1 {
