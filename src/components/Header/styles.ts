@@ -24,6 +24,12 @@ export const Left = styled.div`
     }
 `;
 
+export const FilteredLogo = styled.div`
+    img {
+        filter: invert(38%) sepia(65%) saturate(3856%) hue-rotate(241deg) brightness(96%) contrast(86%);
+    }
+`;
+
 export const Right = styled.div`
     display: flex;
     justify-content: space-around;

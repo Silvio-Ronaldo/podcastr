@@ -15,6 +15,7 @@ export const PlayerContainer = styled.div`
 
     background-color: ${props => props.theme.colors.playerBackground};
     color: ${props => props.theme.colors.playerColor};
+    border-left: 1px solid ${props => props.theme.colors.defaultBorder};
 
     display: flex;
     flex-direction: column;

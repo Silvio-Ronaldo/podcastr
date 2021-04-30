@@ -29,7 +29,7 @@ export default {
         listItemBackground: '#FFFFFF',
         defaultBorder: '#E6E8EB',
         linkColor: '#494D4B',
-        spanColor: '#DDDDDD',
+        spanColor: '#04D361',
         tableHeadColor: '#AFB2B1',
         buttonBackground: '#FFFFFF',
 

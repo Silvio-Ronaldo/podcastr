@@ -1,4 +1,8 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import { createContext, ReactNode, useCallback, useContext, useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import light from '../styles/themes/light';
+import dark from '../styles/themes/dark';
 
 type ThemeContextData = {
     isDarked: boolean;
@@ -12,15 +16,17 @@ type ThemeContextProviderProps = {
 }
 
 export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
-    const [isDarked, setIsDarked] = useState(true);
+    const [isDarked, setIsDarked] = useState(false);
 
-    function toggleTheme() {
+    const toggleTheme = useCallback(() => {
         setIsDarked(!isDarked);
-    }
+    }, [isDarked]);
 
     return (
         <ThemeContext.Provider value={{ isDarked, toggleTheme }}>
-            {children}
+            <ThemeProvider theme={isDarked ? dark : light}>
+                {children}
+            </ThemeProvider>
         </ThemeContext.Provider>
     )
 }

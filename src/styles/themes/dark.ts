@@ -1,17 +1,17 @@
 export default {
-    title:  'light',
+    title:  'dark',
 
     colors:  {
         primary: '#8257E5',
         secondary: '#04D361',
 
-        headerBackground: '#FFFFFF',
+        headerBackground: '#0d0d0d',
         headerButtonLight: '#FFE900',
         headerButtonDark: '#084B83',
 
     
-        playerBackground: '#8257E5',
-        playerColor: '#FFFFFF',
+        playerBackground: '#1a1a1a',
+        playerColor: '#c1abf2',
         
         emptyPlayerBorder: '#9F75FF',
         emptyPlayerBackgroundPrimary:  'rgba(145, 100, 250, 0.8)',
@@ -22,19 +22,19 @@ export default {
         playButtonBackground: '#9164FA',
 
 
-        pageBackground: '#F7F8FA',
-        pageColor: '#808080',
+        pageBackground: '#1a1a1a',
+        pageColor: '#c1abf2',
 
-        titleColor: '#494D4B',
-        listItemBackground: '#FFFFFF',
-        defaultBorder: '#E6E8EB',
-        linkColor: '#494D4B',
-        spanColor: '#DDDDDD',
-        tableHeadColor: '#AFB2B1',
-        buttonBackground: '#FFFFFF',
+        titleColor: '#a889ed',
+        listItemBackground: '#0d0d0d',
+        defaultBorder: '#333333',
+        linkColor: '#a889ed',
+        spanColor: '#04D361',
+        tableHeadColor: '#cdbcf5',
+        buttonBackground: '#000000',
 
 
         episodeButtonThumbBackground: '#04D361',
-        episodeDescriptionColor: '#494D4B',
+        episodeDescriptionColor: '#b49aef',
     },
 };
