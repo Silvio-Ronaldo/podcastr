@@ -4,7 +4,17 @@ export const Homepage = styled.div`
     padding: 0 2rem;
     height: calc(100vh - 6.5rem);
     overflow-y: scroll;
-
+    
+    ::-webkit-scrollbar-track {
+        background-color: #F4F4F4;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+        background: #F4F4F4;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #dad7d7;
+    }
 
     h2 {
         margin-top: 3rem;
