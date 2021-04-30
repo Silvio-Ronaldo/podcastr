@@ -8,6 +8,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import { usePlayer } from '../contexts/PlayerContext';
+import { useTheme } from '../contexts/ThemeContext'
 
 import { Homepage, LatestEpisodes, EpisodeDetails, AllEpisodes } from './home.styles';
 
@@ -30,10 +31,12 @@ type HomeProps = {
 export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   const { playList } = usePlayer();
 
+  const { isDarked } = useTheme();
+
   const episodeList = [...latestEpisodes, ...allEpisodes];
 
   return (
-    <Homepage>
+    <Homepage isDarked={isDarked}>
       <Head>
         <title>Home | Podcastr</title>
       </Head>

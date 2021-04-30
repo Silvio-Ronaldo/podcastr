@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Homepage = styled.div`
+interface ThemeProps {
+    isDarked: boolean;
+}
+
+export const Homepage = styled.div<{ isDarked: ThemeProps }>`
     padding: 0 2rem;
     height: calc(100vh - 6.5rem);
     overflow-y: scroll;
@@ -15,6 +19,12 @@ export const Homepage = styled.div`
     ::-webkit-scrollbar-thumb {
         background: #dad7d7;
     }
+
+    ${props => props.isDarked && css`
+        ::-webkit-scrollbar-thumb {
+            background: #333333;
+        }
+    `}
 
     h2 {
         margin-top: 3rem;
