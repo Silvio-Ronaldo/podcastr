@@ -19,8 +19,8 @@ export const LatestEpisodes = styled.section`
         gap: 1rem;
 
         li {
-            background: var(--list-item-bg);
-            border: 1px solid var(--default-border);
+            background: ${props => props.theme.colors.listItemBackground};
+            border: 1px solid ${props => props.theme.colors.defaultBorder};
             padding: 1.25rem;
             border-radius: 1.5rem;
             position: relative;
@@ -41,8 +41,8 @@ export const LatestEpisodes = styled.section`
 
                 width: 2.5rem;
                 height: 2.5rem;
-                background: var(--button-bg);
-                border: 1px solid var(--default-border);
+                background: ${props => props.theme.colors.buttonBackground};
+                border: 1px solid ${props => props.theme.colors.defaultBorder};
                 border-radius: 0.675rem;
                 font-size: 0;
 
@@ -68,7 +68,7 @@ export const EpisodeDetails = styled.div`
 
     a {
         display: block;
-        color: var(--link-color);
+        color: ${props => props.theme.colors.linkColor};
         font-family: Lexend, sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -106,7 +106,7 @@ export const EpisodeDetails = styled.div`
                 width: 4px;
                 height: 4px;
                 border-radius: 2px;
-                background: var(--span-color);
+                background: ${props => props.theme.colors.spanColor};
                 position: absolute;
                 left: 0;
                 top: 50%;
@@ -124,11 +124,11 @@ export const AllEpisodes = styled.section`
 
         th, td {
             padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--default-border);
+            border-bottom: 1px solid ${props => props.theme.colors.defaultBorder};
         }
 
         th {
-            color: var(--table-head-color);
+            color: ${props => props.theme.colors.tableHeadColor};
             text-transform: uppercase;
             font: 500 0.75rem Lexend, sans-serif;
             text-align: left;
@@ -144,7 +144,7 @@ export const AllEpisodes = styled.section`
             }
 
             a {
-                color: var(--link-color);
+                color: ${props => props.theme.colors.linkColor};
                 font-family: Lexend, sans-serif;
                 font-weight: 600;
                 text-decoration: none;
@@ -159,8 +159,8 @@ export const AllEpisodes = styled.section`
             button {
                 width: 2rem;
                 height: 2rem;
-                background: var(--button-bg);
-                border: 1px solid var(--default-border);
+                background: ${props => props.theme.colors.buttonBackground};
+                border: 1px solid ${props => props.theme.colors.defaultBorder};
                 border-radius: 0.5rem;
                 font-size: 0;
 

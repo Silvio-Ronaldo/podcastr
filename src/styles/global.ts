@@ -20,20 +20,20 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--page-bg);
+        background: ${props => props.theme.colors.pageBackground};
     }
 
     body, input, textarea, button {
         font-weight: 500;
         font-size: 1rem;
         font-family: Inter, sans-serif;
-        color: var(--page-color);
+        color: ${props => props.theme.colors.pageColor};
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: Lexend, sans-serif;
         font-weight: 600;
-        color: var(--title-color);
+        color: ${props => props.theme.colors.titleColor};
     }
 
     h1 {

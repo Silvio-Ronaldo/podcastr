@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    background: var(--header-bg);
+    background: ${props => props.theme.colors.headerBackground};
     height: 6.5rem;
 
     display: flex;
@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
 
     padding: 2rem 4rem;
 
-    border-bottom: 1px solid var(--default-border);
+    border-bottom: 1px solid ${props => props.theme.colors.defaultBorder};
 `;
 
 export const Left = styled.div`
@@ -20,7 +20,7 @@ export const Left = styled.div`
     p {
         margin-left: 2rem;
         padding: 0.25rem 0 0.25rem 2rem;
-        border-left: 1px solid var(--default-border);
+        border-left: 1px solid ${props => props.theme.colors.defaultBorder};
     }
 `;
 
@@ -48,12 +48,12 @@ export const Right = styled.div`
 
 export const Dark = styled.button`
     &:hover {
-        color: var(--header-button-dark);
+        color: ${props => props.theme.colors.headerButtonDark};
     }
 `;
 
 export const Light = styled.button`
     &:hover {
-        color: var(--header-button-light);
+        color: ${props => props.theme.colors.headerButtonLight};
     }
 `;

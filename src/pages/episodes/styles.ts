@@ -12,7 +12,7 @@ export const OneEpisode = styled.div`
 
     header {
         padding-bottom: 1rem;
-        border-bottom: 1px solid var(--default-border);
+        border-bottom: 1px solid ${props => props.theme.colors.defaultBorder};
 
         h1 {
             margin-top: 2rem;
@@ -33,7 +33,7 @@ export const OneEpisode = styled.div`
                     width: 4px;
                     height: 4px;
                     border-radius: 2px;
-                    background: var(--span-color);
+                    background: ${props => props.theme.colors.spanColor};
                     position: absolute;
                     left: 0;
                     top: 50%;
@@ -65,14 +65,14 @@ export const ThumbnailContainer = styled.div`
         &:first-child {
             left: 0;
             top: 50%;
-            background: var(--episode-button-thumb-bg);
+            background: ${props => props.theme.colors.episodeButtonThumbBackground};
             transform: translate(-50%, -50%);
         }
 
         &:last-child {
             right: 0;
             top: 50%;
-            background: var(--episode-button-thumb-bg);
+            background: ${props => props.theme.colors.episodeButtonThumbBackground};
             transform: translate(50%, -50%);
         }
 
@@ -85,7 +85,7 @@ export const ThumbnailContainer = styled.div`
 export const Description = styled.div`
     margin-top: 2rem;
     line-height: 1.675rem;
-    color: var(--episode-description-color);
+    color: ${props => props.theme.colors.episodeDescriptionColor};
 
     p {
         margin: 1.5rem 0;

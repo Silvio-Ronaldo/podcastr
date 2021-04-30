@@ -13,8 +13,8 @@ export const PlayerContainer = styled.div`
     width: 20.5rem;
     height: 100vh;
 
-    background-color: var(--player-bg);
-    color: var(--player-color);
+    background-color: ${props => props.theme.colors.playerBackground};
+    color: ${props => props.theme.colors.playerColor};
 
     display: flex;
     flex-direction: column;
@@ -63,9 +63,9 @@ export const CurrentEpisode = styled.div`
 export const EmptyPlayer = styled.div`
     width: 100%;
     height: 20rem;
-    border: 1.5px dashed var(--empty-player-border);
+    border: 1.5px dashed ${props => props.theme.colors.emptyPlayerBorder};
     border-radius: 1.5rem;
-    background: linear-gradient(143.8deg, var(--empty-player-bg-primary) 0%, var(--empty-player-bg-secondary) 100%);
+    background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 
     padding: 2rem;
     text-align: center;
@@ -100,7 +100,7 @@ export const SliderContainer = styled.div`
 export const EmptySlider = styled.div`
     width: 100%;
     height: 4px;
-    background: var(--slider-bg);
+    background: ${props => props.theme.colors.sliderBackground};
     border-radius: 2px;
 `;
 
@@ -141,7 +141,7 @@ export const PlayButton = styled(Button)`
     width: 4rem;
     height: 4rem;
     border-radius: 1rem;
-    background: var(--play-button-bg);
+    background: ${props => props.theme.colors.playButtonBackground};
 
     &:hover:not(:disabled) {
         filter: brightness(0.95);
