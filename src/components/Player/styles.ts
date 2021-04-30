@@ -1,4 +1,14 @@
-.playerContainer {
+import styled, { css } from 'styled-components';
+
+interface ProgressProps {
+    isEmpty: boolean;
+}
+
+interface ButtonProps {
+    isActive: boolean;
+}
+
+export const PlayerContainer = styled.div`
     padding: 1rem 2rem;
     width: 20.5rem;
     height: 100vh;
@@ -24,14 +34,10 @@
 
     footer {
         align-self: stretch;
-
-        &.empty .progress {
-            opacity: 0.5;
-        }
     }
-}
+`;
 
-.currentEpisode {
+export const CurrentEpisode = styled.div`
     text-align: center;
 
     img {
@@ -52,9 +58,9 @@
         line-height: 1.5rem;
         font-size: 0.875rem;
     }
-}
+`;
 
-.emptyPlayer {
+export const EmptyPlayer = styled.div`
     width: 100%;
     height: 20rem;
     border: 1.5px dashed var(--empty-player-border);
@@ -67,9 +73,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+`;
 
-.progress {
+export const Progress = styled.div<{ isEmpty: ProgressProps }>`
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -82,58 +88,62 @@
         justify-content: center;
     }
 
-    .slider {
-        flex: 1;
+    ${props => props.isEmpty && css`
+        opacity: 0.5;
+    `}
+`;
 
-        .emptySlider {
-            width: 100%;
-            height: 4px;
-            background: var(--slider-bg);
-            border-radius: 2px;
-        }
-    }
-}
+export const SliderContainer = styled.div`
+    flex: 1;
+`;
 
-.buttons {
+export const EmptySlider = styled.div`
+    width: 100%;
+    height: 4px;
+    background: var(--slider-bg);
+    border-radius: 2px;
+`;
+
+export const Buttons = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
     gap: 1.5rem;
+`;
 
-    button {
-        background: transparent;
-        border: 0;
-        font-size: 0;
+export const Button = styled.button<{ isActive: ButtonProps }>`
+    background: transparent;
+    border: 0;
+    font-size: 0;
 
-        transition: filter 0.2s;
+    transition: filter 0.2s;
 
-        &:disabled {
-            cursor: not-allowed;
-            opacity: 0.5;
-        }
-
-        &:hover:not(:disabled) {
-            filter: brightness(0.7);
-        }
-
-        &.isActive {
-            filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
-        }
-
-        &.isActive:hover {
-            filter: brightness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
-        }
-
-        &.playButton {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 1rem;
-            background: var(--play-button-bg);
-
-            &:hover:not(:disabled) {
-                filter: brightness(0.95);
-            }
-        }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
-}
+
+    &:hover:not(:disabled) {
+        filter: brightness(0.7);
+    }
+
+    ${props => props.isActive && css`
+        filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+
+        &:hover {
+            filter: brightness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);  
+        }
+    `}
+`;
+
+export const PlayButton = styled(Button)`
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: var(--play-button-bg);
+
+    &:hover:not(:disabled) {
+        filter: brightness(0.95);
+    }
+`;

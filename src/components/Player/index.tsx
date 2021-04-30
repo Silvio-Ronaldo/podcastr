@@ -7,7 +7,17 @@ import { convertDurationToTimeString } from '../../utils/convertDurationToTimeSt
 
 import 'rc-slider/assets/index.css';
 
-import styles from './styles.module.scss';
+import { 
+    Button,
+    Buttons, 
+    CurrentEpisode, 
+    EmptyPlayer, 
+    EmptySlider, 
+    PlayButton, 
+    PlayerContainer, 
+    Progress, 
+    SliderContainer 
+} from './styles';
 
 export function Player () {
     const audioRef = useRef<HTMLAudioElement>(null);
@@ -68,14 +78,14 @@ export function Player () {
     }
 
     return (
-        <div className={styles.playerContainer}>
+        <PlayerContainer>
             <header>
                 <img src="/playing.svg" alt="Tocando agora" />
                 <strong>Tocando agora</strong>
             </header>
 
             { episode ? (
-                <div className={styles.currentEpisode}>
+                <CurrentEpisode>
                     <Image
                         width={192}
                         height={192}
@@ -84,17 +94,17 @@ export function Player () {
                     />
                     <strong>{episode.title}</strong>
                     <span>{episode.members}</span>
-                </div>
+                </CurrentEpisode>
             ) : (
-                <div className={styles.emptyPlayer}>
+                <EmptyPlayer>
                     <strong>Selecione um podcast para ouvir</strong>
-                </div>
+                </EmptyPlayer>
             ) }
 
-            <footer className={!episode ? styles.empty : ''}>
-                <div className={styles.progress}>
+            <footer>
+                <Progress isEmpty={!episode}>
                     <span>{convertDurationToTimeString(progress)}</span>
-                    <div className={styles.slider}>
+                    <SliderContainer>
                         { episode ? (
                             <Slider 
                                 max={episode.duration}
@@ -105,11 +115,11 @@ export function Player () {
                                 handleStyle={{ borderColor: '#04d361', borderWidth: 4 }}
                             />
                         ) : (
-                            <div className={styles.emptySlider} />    
+                            <EmptySlider />    
                         ) }
-                    </div>
+                    </SliderContainer>
                     <span>{convertDurationToTimeString(episode?.duration ?? 0)}</span>
-                </div>
+                </Progress>
 
                 { episode && (
                     <audio 
@@ -124,21 +134,24 @@ export function Player () {
                     />
                 )}
 
-                <div className={styles.buttons}>
-                    <button 
+                <Buttons>
+                    <Button
                         type="button" 
                         disabled={!episode || episodeList.length === 1}
                         onClick={toggleShuffle}
-                        className={isShuffling ? styles.isActive : ''}
+                        isActive={isShuffling}
                     >
                         <img src="/shuffle.svg" alt="Embaralhar" />
-                    </button>
-                    <button type="button" onClick={playPrevious} disabled={!episode || !hasPrevious}>
-                        <img src="/play-previous.svg" alt="Tocar anterior" />
-                    </button>
-                    <button 
+                    </Button>
+                    <Button 
                         type="button" 
-                        className={styles.playButton} 
+                        onClick={playPrevious} 
+                        disabled={!episode || !hasPrevious}
+                    >
+                        <img src="/play-previous.svg" alt="Tocar anterior" />
+                    </Button>
+                    <PlayButton 
+                        type="button" 
                         disabled={!episode} 
                         onClick={togglePlay}
                     >
@@ -147,20 +160,24 @@ export function Player () {
                         ) : (
                             <img src="/play.svg" alt="Tocar" />
                         ) }
-                    </button>
-                    <button type="button" onClick={playNext} disabled={!episode || !hasNext}>
+                    </PlayButton>
+                    <Button 
+                        type="button" 
+                        onClick={playNext} 
+                        disabled={!episode || !hasNext}
+                    >
                         <img src="/play-next.svg" alt="Tocar próximo" />
-                    </button>
-                    <button 
+                    </Button>
+                    <Button
                         type="button" 
                         disabled={!episode}
                         onClick={toggleLoop}
-                        className={isLooping ? styles.isActive : ''}
+                        isActive={isLooping}
                     >
                         <img src="/repeat.svg" alt="Repetir" />
-                    </button>
-                </div>
+                    </Button>
+                </Buttons>
             </footer>
-        </div>
+        </PlayerContainer>
     );
 }

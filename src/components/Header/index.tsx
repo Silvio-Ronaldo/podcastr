@@ -4,7 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 
 import { useTheme } from '../../contexts/ThemeContext';
 
-import styles from './styles.module.scss';
+import { HeaderContainer, Left, Right, Dark, Light } from './styles';
 
 export function Header() {
     const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
@@ -14,25 +14,33 @@ export function Header() {
     const { isDarked, toggleTheme } = useTheme();
 
     return (
-        <header className={styles.headerContainer}>
-            <div className={styles.left}>
+        <HeaderContainer>
+            <Left>
                 <img src="/logo.svg" alt="Podcastr" />
         
                 <p>O melhor para você ouvir, sempre</p>
-            </div>
+            </Left>
             
 
-            <div className={styles.right}>
-                <button type="button">
+            <Right>
                     { isDarked ? (
-                        <FiMoon size={30} />
+                        <Dark
+                            type="button" 
+                            onClick={toggleTheme} 
+                        >
+                            <FiMoon size={30} />
+                        </Dark>
                     ) : (
-                        <FiSun size={30} />
+                        <Light 
+                            type="button" 
+                            onClick={toggleTheme}
+                        >
+                            <FiSun size={30} />
+                        </Light>
                     ) }
-                </button>
 
                 <span>{currentDate}</span>
-            </div>
-        </header>
+            </Right>
+        </HeaderContainer>
     );
 }

@@ -4,21 +4,23 @@ import { Player } from '../components/Player';
 import { PlayerContextProvider } from '../contexts/PlayerContext';
 import { ThemeContextProvider } from '../contexts/ThemeContext';
 
-import '../styles/global.scss';
+import { GlobalStyle } from '../styles/global';
 
-import styles from '../styles/app.module.scss';
+import { Wrapper } from '../styles/app';
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <ThemeContextProvider>
       <PlayerContextProvider>
-        <div className={styles.wrapper}>
+        <Wrapper>
           <main>
+            <GlobalStyle />
             <Header />
             <Component {...pageProps} />
           </main>
           <Player />
-        </div>
+        </Wrapper>
       </PlayerContextProvider>
     </ThemeContextProvider>
   );
