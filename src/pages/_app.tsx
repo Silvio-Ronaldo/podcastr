@@ -8,7 +8,7 @@ import { GlobalStyle } from '../styles/global';
 
 import { Wrapper } from '../styles/app';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeContextProvider>
       <PlayerContextProvider>
@@ -25,4 +25,3 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp

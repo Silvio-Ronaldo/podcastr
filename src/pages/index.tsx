@@ -83,7 +83,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                 <th></th>
                 <th>Podcast</th>
                 <th>Integrantes</th>
-                <th>Data</th>
+                <th>theme</th>
                 <th>Duração</th>
                 <th></th>
               </tr>
@@ -159,3 +159,4 @@ export const getStaticProps: GetStaticProps = async () => {
     revalidate: 60 * 60 * 8,
   }
 }
+

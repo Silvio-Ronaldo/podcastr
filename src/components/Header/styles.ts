@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface ThemeProps {
+    isDarked: boolean;
+}
 
 export const HeaderContainer = styled.header`
     background: ${props => props.theme.colors.headerBackground};
@@ -13,20 +17,20 @@ export const HeaderContainer = styled.header`
     border-bottom: 1px solid ${props => props.theme.colors.defaultBorder};
 `;
 
-export const Left = styled.div`
+export const Left = styled.div<{ isDarked: ThemeProps }>`
     display: flex;
     align-items: center;
+
+    ${props => props.isDarked && css`
+        img {
+            filter: invert(38%) sepia(65%) saturate(3856%) hue-rotate(241deg) brightness(96%) contrast(86%);
+        }
+    `}
 
     p {
         margin-left: 2rem;
         padding: 0.25rem 0 0.25rem 2rem;
         border-left: 1px solid ${props => props.theme.colors.defaultBorder};
-    }
-`;
-
-export const FilteredLogo = styled.div`
-    img {
-        filter: invert(38%) sepia(65%) saturate(3856%) hue-rotate(241deg) brightness(96%) contrast(86%);
     }
 `;
 

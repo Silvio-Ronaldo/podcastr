@@ -1,4 +1,11 @@
-import { createContext, ReactNode, useCallback, useContext, useState } from 'react';
+import { 
+    createContext, 
+    ReactNode, 
+    useCallback, 
+    useContext, 
+    useLayoutEffect, 
+    useState 
+} from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import light from '../styles/themes/light';
@@ -18,7 +25,19 @@ type ThemeContextProviderProps = {
 export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
     const [isDarked, setIsDarked] = useState(false);
 
+    useLayoutEffect(() => {
+        const theme = localStorage.getItem('dark');
+
+        if (theme) {
+            setIsDarked(JSON.parse(theme));
+        }
+
+        return;
+    }, []);
+
     const toggleTheme = useCallback(() => {
+        localStorage.setItem('dark', JSON.stringify(!isDarked));
+
         setIsDarked(!isDarked);
     }, [isDarked]);
 

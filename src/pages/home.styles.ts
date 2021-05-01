@@ -21,6 +21,10 @@ export const Homepage = styled.div<{ isDarked: ThemeProps }>`
     }
 
     ${props => props.isDarked && css`
+        ::-webkit-scrollbar-track {
+            background-color: #1a1a1a;
+        }
+
         ::-webkit-scrollbar-thumb {
             background: #333333;
         }
