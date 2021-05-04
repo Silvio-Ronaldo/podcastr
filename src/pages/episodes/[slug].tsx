@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import server from '../../../server.json';
 import { usePlayer } from '../../contexts/PlayerContext';
-import { api } from '../../services/api';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 
 import { Description, EpisodePage, OneEpisode, ThumbnailContainer } from '../../styles/episode.styles';
@@ -79,7 +79,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { slug } = ctx.params;
 
-    const { data } = await api.get(`/episodes/${slug}`);
+    const { episodes } = server;
+    const data = episodes.filter(episode => episode.id === slug)[0];
 
     const episode = {
         id: data.id,
