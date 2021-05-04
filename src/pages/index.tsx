@@ -10,7 +10,7 @@ import { convertDurationToTimeString } from '../utils/convertDurationToTimeStrin
 import { usePlayer } from '../contexts/PlayerContext';
 import { useTheme } from '../contexts/ThemeContext'
 
-import { Homepage, LatestEpisodes, EpisodeDetails, AllEpisodes } from './home.styles';
+import { Homepage, LatestEpisodes, EpisodeDetails, AllEpisodes } from '../styles/home.styles';
 
 type Episode = {
   id: string;
