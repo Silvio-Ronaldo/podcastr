@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { format, parseISO } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
-import { api } from '../services/api';
+import server from '../../server.json';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import { usePlayer } from '../contexts/PlayerContext';
 import { useTheme } from '../contexts/ThemeContext'
@@ -125,15 +125,9 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  });
+  const { episodes } = server;
 
-  const episodes = data.map(episode => {
+  const data = episodes.map(episode => {
     return {
       id: episode.id,
       title: episode.title,
@@ -148,8 +142,8 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   });
 
-  const latestEpisodes = episodes.slice(0, 2);
-  const allEpisodes = episodes.slice(2, episodes.length);
+  const latestEpisodes = data.slice(0, 2);
+  const allEpisodes = data.slice(2, data.length);
 
   return {
     props: {
