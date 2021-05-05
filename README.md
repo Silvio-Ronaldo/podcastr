@@ -5,7 +5,7 @@
 <p align="center"><strong>🎧 Listen to podcasts in a simple way on the Podcastr platform</strong></br>Developed at NLW#5</br>Practical project for study<p>
 
 <p align="center">
-  <a href="">
+  <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="Podcastr is released under the MIT license" />
   </a>
   <a href="https://GitHub.com/Silvio-Ronaldo/podcastr/graphs/commit-activity">
@@ -127,7 +127,7 @@
 
 
 <h2>License</h2>
-<p><strong>Podcastr is MIT licensed, as found in the <a href="">LICENSE file</a>.</strong></p>
+<p><strong>Podcastr is MIT licensed, as found in the <a href="./LICENSE">LICENSE file</a>.</strong></p>
 
 
 
