@@ -122,7 +122,7 @@
 <p><strong>Silvio Ronaldo 🍀</strong></p>
 <p>Leave your star, fork the project or open a pull request ❤️</p>
 <p>Contact me on social networks: </p>
-<p><img src="https://img.shields.io/twitter/follow/sivirinoo?style=social" alt="Silvio Ronaldo's Twitter" />
+<p><a href="https://twitter.com/sivirinoo"><img src="https://img.shields.io/twitter/follow/sivirinoo?style=social" alt="Silvio Ronaldo's Twitter" /></a>
 <a href="https://br.linkedin.com/in/silvio-ronaldo77"><img src="https://img.shields.io/badge/-Silvio-blue?style=flat&logo=Linkedin&logoColor=white" alt="Silvio Ronaldo's LinkedIn" /></a></p>
 
 
