@@ -32,7 +32,7 @@
 <ul>
   <li><a href="./README.md#Status">Status</a></li>
   <li><a href="./README.md#Demonstration">Demonstration</a></li>
-  <li><a href="./README.md#Extra_Features">Extra Features</a></li>
+  <li><a href="./README.md#Extra-Features">Extra Features</a></li>
   <li><a href="./README.md#Running-Locally">Running Locally</a></li>
   <li><a href="./README.md#Technologies">Technologies</a></li>
   <li><a href="./README.md#Author">Author</a></li>
@@ -83,7 +83,7 @@
   <li><strong>Code Editor (optional):</strong> Make sure you have a code editor of your choice. I recommend using the VS Code. If you need to, download it <a href="https://code.visualstudio.com/Download">here.</a></li>
 </ol>
 
-<h3>Running the Nextjs App</h3>
+<h3>Running the Next.js App</h3>
 <ol>
   <li>In a terminal, clone this repository:
     <p><code>git clone https://github.com/Silvio-Ronaldo/podcastr.git</code></p>
@@ -127,7 +127,7 @@
 
 
 <h2>License</h2>
-<p><strong>Podcastr is MIT licensed, as found in the LICENSE file.</strong></p>
+<p><strong>Podcastr is MIT licensed, as found in the <a href="">LICENSE file</a>.</strong></p>
 
 
 
