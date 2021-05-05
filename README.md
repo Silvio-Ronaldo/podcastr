@@ -32,8 +32,8 @@
 <ul>
   <li><a href="./README.md#Status">Status</a></li>
   <li><a href="./README.md#Demonstration">Demonstration</a></li>
-  <li><a href="./README.md#Extra">Extra Features</a></li>
-  <li><a href="./README.md#Running">Running Locally</a></li>
+  <li><a href="./README.md#Extra_Features">Extra Features</a></li>
+  <li><a href="./README.md#Running-Locally">Running Locally</a></li>
   <li><a href="./README.md#Technologies">Technologies</a></li>
   <li><a href="./README.md#Author">Author</a></li>
   <li><a href="./README.md#License">License</a></li>
