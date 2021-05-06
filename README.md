@@ -30,7 +30,7 @@
   📋 Table of contents
 </h2>
 <ul>
-  <li><a href="./README.md#Status">Status</a></li>
+  <li><a href="./README.md#-status">Status</a></li>
   <li><a href="./README.md#Demonstration">Demonstration</a></li>
   <li><a href="./README.md#Extra-Features">Extra Features</a></li>
   <li><a href="./README.md#Running-Locally">Running Locally</a></li>
@@ -44,7 +44,7 @@
 <h4 align="center">🚧 Podcastr is in development 🚀</h4>
 
 
-<h2>Demonstration</h2>
+<h2>🖥️ Demonstration</h2>
 <p>
   <strong>To access and test the Podcastr platform, click on the link: https://podcastr-silvio-ronaldo.vercel.app</strong>
 </p>
@@ -66,7 +66,7 @@
   </br>
 
 
-<h2>Extra Features</h2>
+<h2>🔥 Extra Features</h2>
 <h3>Dark Mode</h3>
   <p align="center">
     <img src="./assets/dark-theme.gif" alt="Podcastr Dark Mode" />
@@ -75,7 +75,7 @@
   <p align="center"><strong>🆕 New extra features are in development... ⚒️</strong></p>
   
   
-<h2>Running locally</h2>
+<h2>🕹️ Running locally</h2>
 <h3>Prerequisites</h3>
 <ol>
   <li><strong>Installing Git:</strong> You need to have Git on your machine to perform a few steps. To download Git, click <a href="https://git-scm.com/downloads">here.</a></li></br>
@@ -101,7 +101,7 @@
 </ol>
 
 
-<h2>Technologies</h2>
+<h2>🛡️ Technologies</h2>
 <p>The following tools were used in the development of the project: </p>
 
 <ul>
@@ -115,7 +115,7 @@
 </ul>
 
 
-<h2>Author</h2>
+<h2>👽 Author</h2>
 <p>
   <img src="https://avatars.githubusercontent.com/u/48893927?v=4" alt="Silvio Ronaldo" height=80 width=80 />
 </p>
@@ -126,7 +126,7 @@
 <a href="https://br.linkedin.com/in/silvio-ronaldo77"><img src="https://img.shields.io/badge/-Silvio-blue?style=flat&logo=Linkedin&logoColor=white" alt="Silvio Ronaldo's LinkedIn" /></a></p>
 
 
-<h2>License</h2>
+<h2>⚖️ License</h2>
 <p><strong>Podcastr is MIT licensed, as found in the <a href="./LICENSE">LICENSE file</a>.</strong></p>
 
 
