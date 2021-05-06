@@ -115,7 +115,7 @@
 </ul>
 
 
-<h2>👽 Autor</h2>
+<h2>👽 Author</h2>
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Silvio-Ronaldo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/48893927?v=4" width="100px;" alt="Silvio Ronaldo"/><br /><sub><b>Silvio Ronaldo</b></sub></a><br /><a href="https://github.com/Silvio-Ronaldo" title="Silvio Ronaldo">🍀</a></td>
