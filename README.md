@@ -30,13 +30,13 @@
   📋 Table of contents
 </h2>
 <ul>
-  <li><a href="./README.md#-status">Status</a></li>
-  <li><a href="./README.md#%EF%B8%8F-demonstration">Demonstration</a></li>
-  <li><a href="./README.md#-extra-features">Extra Features</a></li>
-  <li><a href="./README.md#%EF%B8%8F-running-locally">Running Locally</a></li>
-  <li><a href="./README.md#%EF%B8%8F-technologies">Technologies</a></li>
-  <li><a href="./README.md#-author">Author</a></li>
-  <li><a href="./README.md#%EF%B8%8F-license">License</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#-status">Status</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#%EF%B8%8F-demonstration">Demonstration</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#-extra-features">Extra Features</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#%EF%B8%8F-running-locally">Running Locally</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#%EF%B8%8F-technologies">Technologies</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#%EF%B8%8F-technologies">Author</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/podcastr#%EF%B8%8F-license">License</a></li>
 </ul>
 
 
