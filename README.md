@@ -31,12 +31,12 @@
 </h2>
 <ul>
   <li><a href="./README.md#-status">Status</a></li>
-  <li><a href="./README.md#Demonstration">Demonstration</a></li>
-  <li><a href="./README.md#Extra-Features">Extra Features</a></li>
-  <li><a href="./README.md#Running-Locally">Running Locally</a></li>
-  <li><a href="./README.md#Technologies">Technologies</a></li>
-  <li><a href="./README.md#Author">Author</a></li>
-  <li><a href="./README.md#License">License</a></li>
+  <li><a href="./README.md#%EF%B8%8F-demonstration">Demonstration</a></li>
+  <li><a href="./README.md#-extra-features">Extra Features</a></li>
+  <li><a href="./README.md#%EF%B8%8F-running-locally">Running Locally</a></li>
+  <li><a href="./README.md#%EF%B8%8F-technologies">Technologies</a></li>
+  <li><a href="./README.md#-author">Author</a></li>
+  <li><a href="./README.md#%EF%B8%8F-license">License</a></li>
 </ul>
 
 
