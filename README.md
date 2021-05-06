@@ -40,7 +40,7 @@
 </ul>
 
 
-<h2>Status</h2>
+<h2>📌 Status</h2>
 <h4 align="center">🚧 Podcastr is in development 🚀</h4>
 
 
