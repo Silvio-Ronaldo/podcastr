@@ -54,6 +54,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                   src={episode.thumbnail} 
                   alt={episode.title} 
                   objectFit="cover"
+                  quality="100"
                 />
 
                 <EpisodeDetails>

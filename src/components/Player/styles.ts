@@ -26,6 +26,7 @@ export const PlayerContainer = styled.div`
         display: flex;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     strong {
@@ -33,8 +34,25 @@ export const PlayerContainer = styled.div`
         font-weight: 600;
     }
 
-    footer {
-        align-self: stretch;
+    @media (max-width: 1180px), 
+    (landscape: portrait) {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 15vh;
+        padding: 1rem 1rem 1rem 0;
+
+        flex-direction: row;
+        align-items: stretch;
+
+        header {
+            display: none;
+        }
+
+        footer {
+            display: flex;
+
+        }
     }
 `;
 
@@ -54,10 +72,45 @@ export const CurrentEpisode = styled.div`
 
     span {
         display: block;
-        margin-top: 1rem;
+        margin: 1rem 0;
         opacity: 0.6;
         line-height: 1.5rem;
         font-size: 0.875rem;
+    }
+
+    @media (max-width: 1180px), 
+    (landscape: portrait) {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        img {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        strong {
+            margin-top: 0;
+            line-height: 1rem;
+            width: 25rem;
+            margin-left: 1rem;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    @media (max-width: 960px) {
+        strong {
+            width: 30rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        strong {
+            width: 40rem;
+        }
     }
 `;
 
@@ -92,6 +145,16 @@ export const Progress = styled.div<{ isEmpty: ProgressProps }>`
     ${props => props.isEmpty && css`
         opacity: 0.5;
     `}
+
+    @media (max-width: 1180px), 
+    (landscape: portrait) {
+        width: 15rem;
+        margin: 0 3rem;
+    }
+
+    @media (max-width: 960px) {
+        display: none;
+    }
 `;
 
 export const SliderContainer = styled.div`
@@ -111,6 +174,12 @@ export const Buttons = styled.div`
     justify-content: center;
     margin-top: 2.5rem;
     gap: 1.5rem;
+
+    @media (max-width: 1180px), 
+    (landscape: portrait) {
+        margin: 1rem;
+        gap: 1rem;
+    }
 `;
 
 export const Button = styled.button<{ isActive: ButtonProps }>`
@@ -119,6 +188,10 @@ export const Button = styled.button<{ isActive: ButtonProps }>`
     font-size: 0;
 
     transition: filter 0.2s;
+
+    @media (max-width: 650px) {
+        display: none;
+    }
 
     &:disabled {
         cursor: not-allowed;
@@ -143,6 +216,20 @@ export const PlayButton = styled(Button)`
     height: 4rem;
     border-radius: 1rem;
     background: ${props => props.theme.colors.playButtonBackground};
+
+    @media (max-width: 1180px), 
+    (landscape: portrait) {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 650px) {
+        margin: auto;
+    }
 
     &:hover:not(:disabled) {
         filter: brightness(0.95);
