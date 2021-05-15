@@ -107,9 +107,24 @@ export const CurrentEpisode = styled.div`
         }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 670px) {
         strong {
-            width: 40rem;
+            width: 25rem;
+        }
+    }
+
+    @media (max-width: 460px) {
+        strong {
+            width: 20rem;
+        }
+    }
+
+    @media (max-width: 380px) {
+        strong {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 10rem;
         }
     }
 `;
