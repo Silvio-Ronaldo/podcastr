@@ -84,7 +84,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                 <th></th>
                 <th>Podcast</th>
                 <th>Integrantes</th>
-                <th>theme</th>
+                <th>Data</th>
                 <th>Duração</th>
                 <th></th>
               </tr>
@@ -93,7 +93,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
               {allEpisodes.map((episode, index) => {
                 return (
                   <tr key={episode.id}>
-                    <td style={{ width: 72 }}>
+                    <td data-label="" style={{ width: 72 }}>
                       <Image 
                         width={120}
                         height={120}
@@ -102,15 +102,15 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                         objectFit="cover"
                       />
                     </td>
-                    <td>
+                    <td data-label="Podcast">
                       <Link href={`/episodes/${episode.id}`}>
                         <a>{episode.title}</a>
                       </Link>
                     </td>
-                    <td>{episode.members}</td>
-                    <td style={{ width: 100 }}>{episode.publishedAt}</td>
-                    <td>{episode.durationAsString}</td>
-                    <td>
+                    <td data-label="Integrantes">{episode.members}</td>
+                    <td data-label="Data" style={{ width: 100 }}>{episode.publishedAt}</td>
+                    <td data-label="Duração">{episode.durationAsString}</td>
+                    <td data-label="">
                       <button type="button" onClick={() => playList(episodeList, index + latestEpisodes.length)}>
                         <img src="/play-green.svg" alt="Tocar episódio" />
                       </button>

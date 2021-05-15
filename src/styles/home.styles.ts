@@ -195,6 +195,11 @@ export const AllEpisodes = styled.section`
                 width: 2.5rem;
                 height: 2.5rem;
                 border-radius: 0.5rem;
+
+                @media (max-width: 620px) {
+                    width: 0;
+                    height: 0;
+                }
             }
 
             a {
@@ -228,6 +233,68 @@ export const AllEpisodes = styled.section`
                 &:hover {
                     filter: brightness(0.6);
                 }
+            }
+        }
+
+        @media (max-width: 620px) {
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                border-bottom: 
+                    2px 
+                    solid 
+                    ${props => props.theme.colors.defaultBorder};
+            }
+
+            tr td {
+                width: 100% !important;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 
+                    1px
+                    dotted
+                    ${props => props.theme.colors.defaultBorder};  
+            }
+
+            tr td button {
+                width: 100%;
+            }
+
+            tr td:last-child {
+                border-bottom: 0;
+            }
+
+            tr td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 0 2rem 1rem 0;
+                margin-right: 120px;
+                min-width: 70px;
+
+                @media (max-width: 420px) {
+                    margin-right: 80px;
+                }
+
+                @media (max-width: 380px) {
+                    margin-right: 40px;
+                }
+
+                @media (max-width: 330px) {
+                    margin-right: 10px;
+                }
+            }
+
+            tr td:last-child::before {
+                content: "";
+                font-size: 0px;
+                padding: 0;
+                margin-right: 0;
+                min-width: 0;
             }
         }
     }

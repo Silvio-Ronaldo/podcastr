@@ -39,7 +39,7 @@ export const PlayerContainer = styled.div`
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: 15vh;
+        height: 10vh;
         padding: 1rem;
         border-top: 0.1rem solid ${props => props.theme.colors.defaultBorder};
 
