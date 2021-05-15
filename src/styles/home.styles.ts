@@ -63,10 +63,23 @@ export const LatestEpisodes = styled.section`
                 width: 30rem;
             }
 
+            @media (max-width: 460px) {
+                width: 25rem;
+            }
+
+            @media (max-width: 390px) {
+                width: 20rem;
+            }
+
             img {
                 width: 4rem;
                 height: 4rem;
                 border-radius: 1rem;
+
+                @media (max-width: 460px) {
+                    width: 0;
+                    height: 0;
+                }
             }
 
             button {
@@ -112,6 +125,12 @@ export const EpisodeDetails = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 90%;
+
+        @media (max-width: 870px) {
+            white-space: normal;
+            overflow: visible;
+            text-overflow: none;
+        }
 
         &:hover {
             text-decoration: underline;

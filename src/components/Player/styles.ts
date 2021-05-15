@@ -41,6 +41,7 @@ export const PlayerContainer = styled.div`
         width: 100%;
         height: 15vh;
         padding: 1rem;
+        border-top: 0.1rem solid ${props => props.theme.colors.defaultBorder};
 
         flex-direction: row;
         align-items: center;

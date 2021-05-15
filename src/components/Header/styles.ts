@@ -15,6 +15,10 @@ export const HeaderContainer = styled.header`
     padding: 2rem 4rem;
 
     border-bottom: 1px solid ${props => props.theme.colors.defaultBorder};
+
+    @media (max-width: 350px) {
+        padding: 2rem;
+    }
 `;
 
 export const Left = styled.div<{ isDarked: ThemeProps }>`
