@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const Homepage = styled.div<{ isDarked: ThemeProps }>`
     padding: 0 2rem;
-    height: calc(100vh - 104px);
+    height: calc(90vh - 6.5rem);
     overflow-y: scroll;
     
     ::-webkit-scrollbar-track {
