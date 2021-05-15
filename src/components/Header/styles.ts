@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const HeaderContainer = styled.header`
     background: ${props => props.theme.colors.headerBackground};
-    height: 6.5rem;
+    height: 104px;
 
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,10 @@ export const Left = styled.div<{ isDarked: ThemeProps }>`
         margin-left: 2rem;
         padding: 0.25rem 0 0.25rem 2rem;
         border-left: 1px solid ${props => props.theme.colors.defaultBorder};
+    
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 `;
 
@@ -53,6 +57,10 @@ export const Right = styled.div`
         padding: 0 2rem;
         margin-left: auto;
         text-transform: capitalize;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
     }
 `;
 

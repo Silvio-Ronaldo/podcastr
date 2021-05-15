@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const Homepage = styled.div<{ isDarked: ThemeProps }>`
     padding: 0 2rem;
-    height: calc(100vh - 6.5rem);
+    height: calc(100vh - 104px);
     overflow-y: scroll;
     
     ::-webkit-scrollbar-track {
@@ -43,6 +43,12 @@ export const LatestEpisodes = styled.section`
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
 
+        @media (max-width: 870px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         li {
             background: ${props => props.theme.colors.listItemBackground};
             border: 1px solid ${props => props.theme.colors.defaultBorder};
@@ -52,6 +58,10 @@ export const LatestEpisodes = styled.section`
 
             display: flex;
             align-items: center;
+
+            @media (max-width: 870px) {
+                width: 30rem;
+            }
 
             img {
                 width: 4rem;
