@@ -40,10 +40,10 @@ export const PlayerContainer = styled.div`
         bottom: 0;
         width: 100%;
         height: 15vh;
-        padding: 1rem 1rem 1rem 0;
+        padding: 1rem;
 
         flex-direction: row;
-        align-items: stretch;
+        align-items: center;
 
         header {
             display: none;
@@ -51,7 +51,6 @@ export const PlayerContainer = styled.div`
 
         footer {
             display: flex;
-
         }
     }
 `;
@@ -127,6 +126,14 @@ export const EmptyPlayer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1180px),
+    (landscape: portrait) {
+        border: 0;
+        background: transparent;
+        height: 1rem;
+        padding: 1rem;
+    }
 `;
 
 export const Progress = styled.div<{ isEmpty: ProgressProps }>`
