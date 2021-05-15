@@ -32,7 +32,7 @@ export const EpisodePage = styled.div<{ isDarked: ThemeProps }>`
 `;
 
 export const OneEpisode = styled.div`
-    max-width: 45rem;
+    max-width: 985px;
     padding: 3rem 2rem;
     margin: 0 auto;
 
