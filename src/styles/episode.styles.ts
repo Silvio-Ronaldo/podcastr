@@ -1,12 +1,38 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const EpisodePage = styled.div`
-    height: calc(100vh - 6.5rem);
+interface ThemeProps {
+    isDarked: boolean;
+}
+
+export const EpisodePage = styled.div<{ isDarked: ThemeProps }>`
+    padding: 0 2rem;
+    height: calc(90vh - 6.5rem);
     overflow-y: scroll;
+
+    ::-webkit-scrollbar-track {
+        background-color: #F4F4F4;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+        background: #F4F4F4;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #dad7d7;
+    }
+
+    ${props => props.isDarked && css`
+        ::-webkit-scrollbar-track {
+            background-color: #1a1a1a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333333;
+        }
+    `}
 `;
 
 export const OneEpisode = styled.div`
-    max-width: 45rem;
+    max-width: 985px;
     padding: 3rem 2rem;
     margin: 0 auto;
 

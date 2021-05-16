@@ -6,7 +6,7 @@ interface ThemeProps {
 
 export const Homepage = styled.div<{ isDarked: ThemeProps }>`
     padding: 0 2rem;
-    height: calc(100vh - 6.5rem);
+    height: calc(90vh - 6.5rem);
     overflow-y: scroll;
     
     ::-webkit-scrollbar-track {
@@ -43,6 +43,12 @@ export const LatestEpisodes = styled.section`
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
 
+        @media (max-width: 870px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         li {
             background: ${props => props.theme.colors.listItemBackground};
             border: 1px solid ${props => props.theme.colors.defaultBorder};
@@ -53,10 +59,27 @@ export const LatestEpisodes = styled.section`
             display: flex;
             align-items: center;
 
+            @media (max-width: 870px) {
+                width: 30rem;
+            }
+
+            @media (max-width: 460px) {
+                width: 25rem;
+            }
+
+            @media (max-width: 390px) {
+                width: 20rem;
+            }
+
             img {
                 width: 4rem;
                 height: 4rem;
                 border-radius: 1rem;
+
+                @media (max-width: 460px) {
+                    width: 0;
+                    height: 0;
+                }
             }
 
             button {
@@ -102,6 +125,12 @@ export const EpisodeDetails = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 90%;
+
+        @media (max-width: 870px) {
+            white-space: normal;
+            overflow: visible;
+            text-overflow: none;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -166,6 +195,11 @@ export const AllEpisodes = styled.section`
                 width: 2.5rem;
                 height: 2.5rem;
                 border-radius: 0.5rem;
+
+                @media (max-width: 620px) {
+                    width: 0;
+                    height: 0;
+                }
             }
 
             a {
@@ -199,6 +233,68 @@ export const AllEpisodes = styled.section`
                 &:hover {
                     filter: brightness(0.6);
                 }
+            }
+        }
+
+        @media (max-width: 620px) {
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                border-bottom: 
+                    2px 
+                    solid 
+                    ${props => props.theme.colors.defaultBorder};
+            }
+
+            tr td {
+                width: 100% !important;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 
+                    1px
+                    dotted
+                    ${props => props.theme.colors.defaultBorder};  
+            }
+
+            tr td button {
+                width: 100%;
+            }
+
+            tr td:last-child {
+                border-bottom: 0;
+            }
+
+            tr td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 0 2rem 1rem 0;
+                margin-right: 120px;
+                min-width: 70px;
+
+                @media (max-width: 420px) {
+                    margin-right: 80px;
+                }
+
+                @media (max-width: 380px) {
+                    margin-right: 40px;
+                }
+
+                @media (max-width: 330px) {
+                    margin-right: 10px;
+                }
+            }
+
+            tr td:last-child::before {
+                content: "";
+                font-size: 0px;
+                padding: 0;
+                margin-right: 0;
+                min-width: 0;
             }
         }
     }
