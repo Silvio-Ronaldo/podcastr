@@ -108,6 +108,7 @@ export const PlayButton = styled(Button)`
 
 export const ModalContainer = styled.div`
     display: none;
+    cursor: pointer;
 
     @media (max-width: 1180px) {
         display: flex;
@@ -121,6 +122,7 @@ export const ModalContent = styled.div`
     justify-content: center;
     padding: 1rem 2rem;
     background: ${props => props.theme.colors.playerBackground};
+    color: ${props => props.theme.colors.playerColor};
 
     img {
         border-radius: 2rem;
@@ -134,6 +136,7 @@ export const ModalContent = styled.div`
     span {
         margin-top: 1rem;
         align-self: center;
+        opacity: 0.6;
     }
 
     footer {
