@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: flex;
+    flex-direction: column;
 
-    main {
-        flex: 1;
+    @media (min-width: 1180px) {
+        flex-direction: row;
     }
 `;

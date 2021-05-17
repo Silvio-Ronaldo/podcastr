@@ -7,6 +7,7 @@ import Head from 'next/head';
 
 import server from '../../../server.json';
 import { usePlayer } from '../../contexts/PlayerContext';
+import { useTheme } from '../../contexts/ThemeContext';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 
 import { Description, EpisodePage, OneEpisode, ThumbnailContainer } from '../../styles/episode.styles';
@@ -30,8 +31,10 @@ type EpisodeProps = {
 export default function Episode({ episode }: EpisodeProps) {
     const { play } = usePlayer();
 
+    const { isDarked } = useTheme();
+
     return (
-        <EpisodePage>
+        <EpisodePage isDarked={isDarked}>
             <Head>
                 <title>{episode.title} | Podcastr</title>
             </Head>
@@ -44,8 +47,8 @@ export default function Episode({ episode }: EpisodeProps) {
                         </button>
                     </Link>
                     <Image 
-                        width={700} 
-                        height={160} 
+                        width={950} 
+                        height={220} 
                         src={episode.thumbnail} 
                         objectFit="cover" 
                     />
