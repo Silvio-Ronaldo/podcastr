@@ -1,6 +1,6 @@
 {
-    "name": "PWA App",
-    "short_name": "App",
+    "name": "Podcastr PWA",
+    "short_name": "Podcastr",
     "icons": [
       {
         "src": "/maskable_icon.png",
