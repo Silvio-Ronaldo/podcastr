@@ -33,7 +33,6 @@ export default class MyDocument extends Document {
             <Html lang="pt-br">
                 <Head>
                     <meta charSet="utf-8" />
-                    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta name="description" content="Ouça podcasts de uma forma simples." />
                     <meta name='application-name' content='PWA App Podcastr' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
@@ -45,7 +44,7 @@ export default class MyDocument extends Document {
                     <meta name='msapplication-tap-highlight' content='no' />
                     <meta name='theme-color' content='#8257E5' />
                     
-                    <link rel="manifest" href="/public/manifest.json" />
+                    <link rel="manifest" href="/manifest.json" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend:wght@500;600&display=swap" rel="stylesheet" />
                 

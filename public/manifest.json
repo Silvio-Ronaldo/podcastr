@@ -3,100 +3,100 @@
     "short_name": "App",
     "icons": [
       {
-        "src": "/public/maskable_icon.png",
+        "src": "/maskable_icon.png",
         "sizes": "1024x1024",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x512.png",
+        "src": "/maskable_icon_x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x384.png",
+        "src": "/maskable_icon_x384.png",
         "sizes": "384x384",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x192.png",
+        "src": "/maskable_icon_x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x128.png",
+        "src": "/maskable_icon_x128.png",
         "sizes": "128x128",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x96.png",
+        "src": "/maskable_icon_x96.png",
         "sizes": "96x96",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x72.png",
+        "src": "/maskable_icon_x72.png",
         "sizes": "72x72",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/maskable_icon_x48.png",
+        "src": "/maskable_icon_x48.png",
         "sizes": "48x48",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/public/arrow-left.svg",
+        "src": "/arrow-left.svg",
         "sizes": "10x16",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/logo.svg",
+        "src": "/logo.svg",
         "sizes": "163x40",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/pause.svg",
+        "src": "/pause.svg",
         "sizes": "11x19",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/play-green.svg",
+        "src": "/play-green.svg",
         "sizes": "20x20",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/play-next.svg",
+        "src": "/play-next.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/play-previous.svg",
+        "src": "/play-previous.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/play.svg",
+        "src": "/play.svg",
         "sizes": "32x32",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/playing.svg",
+        "src": "/playing.svg",
         "sizes": "32x32",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/repeat.svg",
+        "src": "/repeat.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/public/shuffle.svg",
+        "src": "/shuffle.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       }
