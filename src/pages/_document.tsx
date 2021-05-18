@@ -48,6 +48,7 @@ export default class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend:wght@500;600&display=swap" rel="stylesheet" />
                 
+                    <link rel='apple-touch-icon' href='/icons/apple_touch_icon_x192.png' />
                     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
                     <meta name='twitter:card' content='summary' />

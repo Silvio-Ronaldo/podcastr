@@ -3,101 +3,106 @@
     "short_name": "Podcastr",
     "icons": [
       {
-        "src": "/maskable_icon.png",
+        "src": "/icons/maskable_icon.png",
         "sizes": "1024x1024",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x512.png",
+        "src": "/icons/maskable_icon_x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x384.png",
+        "src": "/icons/maskable_icon_x384.png",
         "sizes": "384x384",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x192.png",
+        "src": "/icons/maskable_icon_x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x128.png",
+        "src": "/icons/maskable_icon_x128.png",
         "sizes": "128x128",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x96.png",
+        "src": "/icons/maskable_icon_x96.png",
         "sizes": "96x96",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x72.png",
+        "src": "/icons/maskable_icon_x72.png",
         "sizes": "72x72",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/maskable_icon_x48.png",
+        "src": "/icons/maskable_icon_x48.png",
         "sizes": "48x48",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/arrow-left.svg",
+        "src": "/icons/arrow-left.svg",
         "sizes": "10x16",
         "type": "image/svg+xml"
       },
       {
-        "src": "/logo.svg",
-        "sizes": "163x40",
-        "type": "image/svg+xml"
-      },
-      {
-        "src": "/pause.svg",
+        "src": "/icons/pause.svg",
         "sizes": "11x19",
         "type": "image/svg+xml"
       },
       {
-        "src": "/play-green.svg",
+        "src": "/icons/play-green.svg",
         "sizes": "20x20",
         "type": "image/svg+xml"
       },
       {
-        "src": "/play-next.svg",
+        "src": "/icons/play-next.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/play-previous.svg",
+        "src": "/icons/play-previous.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/play.svg",
+        "src": "/icons/play.svg",
         "sizes": "32x32",
         "type": "image/svg+xml"
       },
       {
-        "src": "/playing.svg",
+        "src": "/icons/playing.svg",
         "sizes": "32x32",
         "type": "image/svg+xml"
       },
       {
-        "src": "/repeat.svg",
+        "src": "/icons/repeat.svg",
         "sizes": "24x24",
         "type": "image/svg+xml"
       },
       {
-        "src": "/shuffle.svg",
+        "src": "/icons/shuffle.svg",
         "sizes": "24x24",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "/icons/apple_touch_icon_x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo.svg",
+        "sizes": "163x40",
         "type": "image/svg+xml"
       }
     ],
