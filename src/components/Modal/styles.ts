@@ -108,10 +108,10 @@ export const PlayButton = styled(Button)`
 
 export const ModalContainer = styled.div`
     display: none;
-    cursor: pointer;
 
     @media (max-width: 1180px) {
         display: flex;
+        cursor: pointer;
     }
 `;
 
