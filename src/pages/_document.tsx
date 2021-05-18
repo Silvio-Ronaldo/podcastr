@@ -34,10 +34,10 @@ export default class MyDocument extends Document {
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="description" content="Ouça podcasts de uma forma simples." />
-                    <meta name='application-name' content='PWA App Podcastr' />
+                    <meta name='application-name' content='Podcastr' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
                     <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-                    <meta name='apple-mobile-web-app-title' content='PWA App Podcastr' />
+                    <meta name='apple-mobile-web-app-title' content='Podcastr' />
                     <meta name='format-detection' content='telephone=no' />
                     <meta name='mobile-web-app-capable' content='yes' />
                     <meta name='msapplication-TileColor' content='#8257E5' />
@@ -57,7 +57,7 @@ export default class MyDocument extends Document {
                     <meta name='twitter:image' content='https://podcastr-silvio-ronaldo.vercel.app/public/favicon.png' />
                     <meta name='twitter:creator' content='@Sivirinoo' />
                     <meta property='og:type' content='website' />
-                    <meta property='og:title' content='PWA App Podcastr' />
+                    <meta property='og:title' content='Podcastr' />
                     <meta property='og:description' content='Ouça podcasts a qualquer hora e em qualquer lugar' />
                     <meta property='og:site_name' content='Podcastr' />
                     <meta property='og:url' content='https://podcastr-silvio-ronaldo.vercel.app' />
