@@ -36,4 +36,6 @@ yarn-error.log*
 # pwa's files
 **/public/workbox-*.js
 **/public/sw.js
+**/public/fallback-*.js
+
 
