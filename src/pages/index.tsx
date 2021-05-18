@@ -38,6 +38,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   return (
     <Homepage isDarked={isDarked}>
       <Head>
+        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
         <title>Home | Podcastr</title>
       </Head>
 
@@ -67,7 +68,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                 </EpisodeDetails>
 
                 <button type="button" onClick={() => playList(episodeList, index)}>
-                  <img src="/play-green.svg" alt="Tocar episódio" />
+                  <img src="/icons/play-green.svg" alt="Tocar episódio" />
                 </button>
               </li>
             )
@@ -112,7 +113,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                     <td data-label="Duração">{episode.durationAsString}</td>
                     <td data-label="">
                       <button type="button" onClick={() => playList(episodeList, index + latestEpisodes.length)}>
-                        <img src="/play-green.svg" alt="Tocar episódio" />
+                        <img src="/icons/play-green.svg" alt="Tocar episódio" />
                       </button>
                     </td>
                   </tr>

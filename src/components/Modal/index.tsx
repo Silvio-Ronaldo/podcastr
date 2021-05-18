@@ -98,14 +98,14 @@ export function ModalComp({ isOpen, episode, progress, handleSeek, handleModal }
                                     onClick={toggleShuffle}
                                     isActive={isShuffling}
                                 >
-                                    <img src="/shuffle.svg" alt="Embaralhar" />
+                                    <img src="/icons/shuffle.svg" alt="Embaralhar" />
                                 </Button>
                                 <Button 
                                     type="button" 
                                     onClick={playPrevious} 
                                     disabled={!episode || !hasPrevious}
                                 >
-                                    <img src="/play-previous.svg" alt="Tocar anterior" />
+                                    <img src="/icons/play-previous.svg" alt="Tocar anterior" />
                                 </Button>
                                 <PlayButton 
                                     type="button" 
@@ -113,9 +113,9 @@ export function ModalComp({ isOpen, episode, progress, handleSeek, handleModal }
                                     onClick={togglePlay}
                                 >
                                     { isPlaying ? (
-                                        <img src="/pause.svg" alt="Pausar" />
+                                        <img src="/icons/pause.svg" alt="Pausar" />
                                     ) : (
-                                        <img src="/play.svg" alt="Tocar" />
+                                        <img src="/icons/play.svg" alt="Tocar" />
                                     ) }
                                 </PlayButton>
                                 <Button 
@@ -123,7 +123,7 @@ export function ModalComp({ isOpen, episode, progress, handleSeek, handleModal }
                                     onClick={playNext} 
                                     disabled={!episode || !hasNext}
                                 >
-                                    <img src="/play-next.svg" alt="Tocar próximo" />
+                                    <img src="/icons/play-next.svg" alt="Tocar próximo" />
                                 </Button>
                                 <Button
                                     type="button" 
@@ -131,7 +131,7 @@ export function ModalComp({ isOpen, episode, progress, handleSeek, handleModal }
                                     onClick={toggleLoop}
                                     isActive={isLooping}
                                 >
-                                    <img src="/repeat.svg" alt="Repetir" />
+                                    <img src="/icons/repeat.svg" alt="Repetir" />
                                 </Button>
                             </Buttons>
                         </footer>

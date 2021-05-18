@@ -6,8 +6,12 @@ interface ThemeProps {
 
 export const EpisodePage = styled.div<{ isDarked: ThemeProps }>`
     padding: 0 2rem;
-    height: calc(90vh - 6.5rem);
+    height: calc(100vh - 6.5rem);
     overflow-y: scroll;
+
+    @media (max-width: 1180px) {
+        height: calc(93vh - 6.5rem);
+    }
 
     ::-webkit-scrollbar-track {
         background-color: #F4F4F4;

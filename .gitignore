@@ -32,3 +32,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# pwa's files
+**/public/workbox-*.js
+**/public/workbox-*.js.*
+**/public/sw.js
+**/public/sw.js.*
+**/public/fallback-*.js
+
+
