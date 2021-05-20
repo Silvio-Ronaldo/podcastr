@@ -87,8 +87,8 @@
   
 <h3>PWA</h3>
   <p align="center">
-    <img src="./assets/pwa-1" alt="Podcastr PWA" />
-    <img src="./assets/pwa-2" alt="Podcastr PWA" />
+    <img src="./assets/pwa-2.jpeg" alt="Podcastr PWA" height=800 />
+    <img src="./assets/pwa-1.jpeg" alt="Podcastr PWA" height=800 />
   </p>
   
   <p align="center"><strong>🆕 New extra features are in development... ⚒️</strong></p>
