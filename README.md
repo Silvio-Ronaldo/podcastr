@@ -71,6 +71,16 @@
   <p align="center">
     <img src="./assets/dark-theme.gif" alt="Podcastr Dark Mode" />
   </p>
+
+<h3>Responsive</h3>
+  <p align="center">
+    <img src="" alt="" />
+  </p>
+  
+<h3>PWA</h3>
+  <p align="center">
+    <img src="" alt="" />
+  </p>
   
   <p align="center"><strong>🆕 New extra features are in development... ⚒️</strong></p>
   
