@@ -119,6 +119,9 @@
   <li>After these steps, the server should start at the <strong>3000</strong> port, open the browser and access <a href="http://localhost:3000">http://localhost:3000</a>.</li>
 </ol>
 
+<h3>Running Podcastr PWA</h3>
+<p>To install PWA, access the Podcastr platform through Chrome or Edge browsers, both on your smartphone and on your computer and click on install application.</p>
+
 
 <h2>🛡️ Technologies</h2>
 <p>The following tools were used in the development of the project: </p>
