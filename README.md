@@ -74,7 +74,15 @@
 
 <h3>Responsive</h3>
   <p align="center">
-    <img src="" alt="" />
+    <img src="./assets/responsive-1.png" alt="Podcastr Responsive Screen" />
+  </p>
+  
+  <p align="center">
+    <img src="./assets/responsive-3.png" alt="Podcastr Responsive Screen" />
+  </p>
+  
+  <p align="center">
+    <img src="./assets/responsive-2.png" alt="Podcastr Responsive Screen" />
   </p>
   
 <h3>PWA</h3>
