@@ -79,15 +79,16 @@
   
   <p align="center">
     <img src="./assets/responsive-3.png" alt="Podcastr Responsive Screen" />
-  </p>
+  </p></br>
   
   <p align="center">
     <img src="./assets/responsive-2.png" alt="Podcastr Responsive Screen" />
-  </p>
+  </p></br>
   
 <h3>PWA</h3>
   <p align="center">
-    <img src="" alt="" />
+    <img src="./assets/pwa-1" alt="Podcastr PWA" />
+    <img src="./assets/pwa-2" alt="Podcastr PWA" />
   </p>
   
   <p align="center"><strong>🆕 New extra features are in development... ⚒️</strong></p>
