@@ -74,7 +74,7 @@
 
 <h3>Responsive</h3>
   <p align="center">
-    <img src="./assets/responsive-1.png" alt="Podcastr Responsive Screen" />
+    <img src="./assets/responsive-1.png" alt="Podcastr Responsive Screen" height=600 width=800 />
   </p>
   
   <p align="center">
