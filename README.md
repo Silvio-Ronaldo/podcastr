@@ -41,7 +41,7 @@
 
 
 <h2>📌 Status</h2>
-<h4 align="center">🚧 Podcastr is in development 🚀</h4>
+<h4 align="center">🚧 Podcastr is active. 🚀</h4>
 
 
 <h2>🖥️ Demonstration</h2>
